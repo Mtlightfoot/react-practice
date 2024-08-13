@@ -15,6 +15,10 @@ function NavBar() {
 
                     <Nav className="me-auto">
 
+                        <LinkContainer to='/Calculator'>
+                            <Nav.Link >Calculator</Nav.Link>
+                        </LinkContainer>
+
                         <LinkContainer to='/Count'>
                             <Nav.Link >Count</Nav.Link>
                         </LinkContainer>

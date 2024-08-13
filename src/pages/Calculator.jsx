@@ -2,16 +2,16 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CountComponent from '../components/CountComponent';
+import CalculatorComponent from '../components/CalculatorComponent';
 
-function Count() {
+function Calculator() {
     return (
         <div className='flexContainer'>
             <div className='box'>
                 <Container>
                     <Row className='pageRow'>
-                        <Col className='pageColumn leftColumn' md={6}><h1 className='pageTitle'>Count</h1></Col>
-                        <Col className='pageColumn rightColumn' md={6}><CountComponent /></Col>
+                        <Col className='pageColumn leftColumn' md={6}><h1 className='pageTitle'>Calculator</h1></Col>
+                        <Col className='pageColumn rightColumn' md={6}><CalculatorComponent /></Col>
                     </Row>
                 </Container>
             </div>
@@ -20,4 +20,4 @@ function Count() {
     )
 }
 
-export default Count
+export default Calculator

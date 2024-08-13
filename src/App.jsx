@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 // Page imports
 import Home from './pages/Home'
+import Calculator from "./pages/Calculator";
 import Count from './pages/Count'
 import RockPaperScissors from './pages/RockPaperScissors'
 
@@ -20,6 +21,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Calculator" element={<Calculator />} />
         <Route path="/Count" element={<Count />} />
         <Route path="/RockPaperScissors" element={<RockPaperScissors />} />
       </Routes>
