@@ -10,7 +10,12 @@ function Count() {
             <div className='box'>
                 <Container>
                     <Row className='pageRow'>
-                        <Col className='pageColumn leftColumn' md={6}><h1 className='pageTitle'>Count</h1></Col>
+                        <Col className='pageColumn leftColumn' md={6}>
+                            <div>
+                                <h1 className='pageTitle'>Count</h1>
+                                <h5 className='bottomSpace'>Click an option to change the number</h5>
+                            </div>
+                        </Col>
                         <Col className='pageColumn rightColumn' md={6}><CountComponent /></Col>
                     </Row>
                 </Container>

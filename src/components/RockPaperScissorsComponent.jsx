@@ -57,12 +57,12 @@ function RockPaperScissorsComponent() {
         <Container>
             <Row className='pageRow'>
                 <Col className='pageColumn leftColumn' md={6}>
-                    <h1>
+                    <div>
                         <button onClick={playerSelection} value={"rock"} className='pageTitle rockPaperScissorsBtn'>Rock</button>
                         <button onClick={playerSelection} value={"paper"} className='pageTitle rockPaperScissorsBtn'>Paper</button>
                         <button onClick={playerSelection} value={"scissors"} className='pageTitle rockPaperScissorsBtn'>Scissors</button>
                         <h5 className='bottomSpace'>Click an option to play</h5>
-                    </h1>
+                    </div>
 
                 </Col>
                 <Col className='pageColumn rightColumn' md={6}>

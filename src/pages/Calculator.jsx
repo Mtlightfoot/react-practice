@@ -10,7 +10,12 @@ function Calculator() {
             <div className='box'>
                 <Container>
                     <Row className='pageRow'>
-                        <Col className='pageColumn leftColumn' md={6}><h1 className='pageTitle'>Calculator</h1></Col>
+                        <Col className='pageColumn leftColumn' md={6}>
+                            <div>
+                                <h1 className='pageTitle'>Calculator</h1>
+                                <h5 className='bottomSpace'>You know how a calculator works...</h5>
+                            </div>
+                        </Col>
                         <Col className='pageColumn rightColumn' md={6}><CalculatorComponent /></Col>
                     </Row>
                 </Container>
