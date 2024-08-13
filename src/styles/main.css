@@ -88,6 +88,14 @@ body {
     margin: 0px 50px;
 }
 
+.countButton:hover {
+    color: #8F8F8F
+}
+
+.countButton:active {
+    color: black
+}
+
 /* Calculator CSS */
 .calculator-grid {
     display: grid;
@@ -103,6 +111,7 @@ body {
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
+    color: #8F8F8F;
 }
 
 .calculator-grid>button:hover,
@@ -124,20 +133,6 @@ body {
     padding: .75rem;
     word-wrap: break-word;
     word-break: break-all;
-}
-
-.title {
-    text-align: center;
-    font-size: 90px;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    font-weight: 600;
-    background-image: url(../public/flame.jpg);
-    background-position: center;
-    background-size: contain;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .output .previous-operand {
@@ -172,11 +167,19 @@ body {
     }
 
     .rightColumn {
-        height: 70vh;
+        height: 60vh;
         justify-content: start;
     }
 
     .leftColumn {
-        height: 20vh;
+        height: 30vh;
+    }
+
+    .calculator-grid {
+        display: grid;
+        background-color: #acacac;
+        justify-content: center;
+        grid-template-columns: repeat(4, 6rem);
+        grid-template-rows: minmax(5rem, auto) repeat(5, 4rem);
     }
 }
