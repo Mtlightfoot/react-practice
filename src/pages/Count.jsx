@@ -15,7 +15,6 @@ function Count() {
                     </Row>
                 </Container>
             </div>
-
         </div>
     )
 }

@@ -12,14 +12,11 @@ function CountComponent() {
         setCount(prevCount => prevCount + 1)
     }
 
-    const [state, setState] = useState({ colour: "blue", countage: 7, details: { firstName: "Matt", lastName: "Lightfoot" } });
-
-    console.log(state.details.firstName)
-    return (<>
+    return (<div>
         <button className="countButton pageTitleSm" onClick={decrementCount}>−</button>
         <span className="pageTitle">{count}</span>
         <button className="countButton pageTitleSm" onClick={incrementCount}>+</button>
-    </>
+    </div>
     )
 }
 

@@ -1,8 +1,13 @@
-import React from 'react'
+import RockPaperScissorsComponent from "../components/RockPaperScissorsComponent"
 
 function RockPaperScissors() {
+
     return (
-        <div className='flexContainer'>RockPaperScissors</div>
+        <div className='flexContainer'>
+            <div className='box'>
+                <RockPaperScissorsComponent />
+            </div>
+        </div>
     )
 }
 
