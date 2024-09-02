@@ -8,7 +8,13 @@ function RockPaperScissorsComponent() {
     const [score, setScore] = useState(0)
     const [opponentScore, setOpponentScore] = useState(0)
     const [message, setMessage] = useState("First to five wins!")
-    const opponentOption = "rock"
+    const opponentOption = getOpponentChoice();
+
+    function getOpponentChoice() {
+        const opponentChoice = ["rock", "paper", "scissors"];
+        const random = opponentChoice[Math.floor(Math.random() * opponentChoice.length)];
+        return random;
+    }
 
     function playerSelection(e) {
         if (opponentScore < 5 && score < 5) {
